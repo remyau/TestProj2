@@ -1,5 +1,4 @@
-﻿@*@model TestProj.ViewModel.MOCKTBLViewModel*@
-@model IEnumerable<TestProj.ViewModel.MOCKTBLViewModel>
+﻿@model IEnumerable<TestProj.ViewModel.MOCKTBLViewModel>
 @{
     ViewBag.Title = "Index";
 }
@@ -39,11 +38,9 @@
             <th>Email</th>
             <th>Action</th>
         </tr>
-
-        @*@if (ViewBag.MOCKTBLList != null)*@
+       
         @if (Model != null)
-        {
-            //foreach (var item in ViewBag.MOCKTBLList)
+        {            
             foreach (var item in Model)
             {
                 <tr id="row_@item.Id">
